@@ -3,8 +3,9 @@ package sesionJuegos;
 
 /**
  * @author L. Mandow
- * 
+ * @author I.Lasaosa
  */
+ 
 public class TicTacToeDemo {
 	public static void main(String[] args) {
 		System.out.println("Mi Demo");
