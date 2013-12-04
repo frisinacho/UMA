@@ -17,8 +17,9 @@ import aima.core.util.Util;
 
 /**
  * @author Ravi Mohan
- * 
+ * @author I. Lasaosa
  */
+ 
 public class DataSetFactory {
 
 	public DataSet fromFile(String filename, DataSetSpecification spec,
@@ -105,9 +106,9 @@ public class DataSetFactory {
 	
 	
 	
-	/// NUEVOS MÉTODOS PARA LA PRÁCTICA
+	/// NUEVOS Mï¿½TODOS PARA LA PRï¿½CTICA
 	// iris90 tiene el 90% de los ejemplos (entrenamiento)
-	// iris10 tiene el 10% restante (validación)
+	// iris10 tiene el 10% restante (validaciï¿½n)
 	
 	public static DataSet getIrisDataSet90() throws Exception {
 		DataSetSpecification spec = createIrisDataSetSpec();
