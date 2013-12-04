@@ -12,39 +12,42 @@ import aima.core.probability.mdp.search.ValueIteration;
 
 /**
  * @author L. Mandow
+ * @author I. Lasaosa
+ * 
  * Adaptado del original por:
  * @author Ravi Mohan
  * @author Ciaran O'Reilly
  */
+ 
 public class MDPDemo {
 
 
 	public static void main(String[] args) {
 
-		// Ejemplo mostrado en clase (Capítulo 17, libro AIMA)
+		// Ejemplo mostrado en clase (Capï¿½tulo 17, libro AIMA)
 		//ejemplo1();
 		
-		// Llamada al ejemplo de la práctica
+		// Llamada al ejemplo de la prï¿½ctica
 		ejemplo2();
 		
 	}
 
 	public static void ejemplo1() {
 
-		System.out.println("DEMO: Iteración de Utilidades");
+		System.out.println("DEMO: Iteraciï¿½n de Utilidades");
 		System.out.println("=====================");
 
 		// Creamos la rejilla de 4x3 vista en clase:
 		//		- cada celda guarda el valor de la recompensa
-		//		- las acciones posibles son movimientos arriba, abajo, dcha, e izq (rebotando en los obstáculos)
+		//		- las acciones posibles son movimientos arriba, abajo, dcha, e izq (rebotando en los obstï¿½culos)
 		CellWorld<Double> cw = CellWorldFactory.createCellWorldForFig17_1();
 		
 		// Creamos un MDP a partir de la rejilla:
-		//         - habrá incertidumbre en los efectos de las acciones
+		//         - habrï¿½ incertidumbre en los efectos de las acciones
 		MarkovDecisionProcess<Cell<Double>, CellWorldAction> mdp = MDPFactory
 				.createMDPForFigure17_3(cw);
 		
-		// Creamos un objeto de la clase ValueIteration, que implementa el algoritmo de iteración de Utilidades
+		// Creamos un objeto de la clase ValueIteration, que implementa el algoritmo de iteraciï¿½n de Utilidades
 		ValueIteration<Cell<Double>, CellWorldAction> vi = new ValueIteration<Cell<Double>, CellWorldAction>(
 				1.0);
 
@@ -70,7 +73,7 @@ public class MDPDemo {
 
 		System.out.println("=========================\n");
 		
-		System.out.println("Análisis de la posición (3,1):");
+		System.out.println("Anï¿½lisis de la posiciï¿½n (3,1):");
 		
 		Double uArriba = 0.8 * U.get(cw.getCellAt(3, 2)) +
 						 0.1 * U.get(cw.getCellAt(4, 1)) +
@@ -93,25 +96,25 @@ public class MDPDemo {
 		System.out.format("\nUtilidad esperada (abajo):     %5.3f", uAbajo);
 	}
 	
-	// Ejemplo de la práctica
+	// Ejemplo de la prï¿½ctica
 	
 	 public static void ejemplo2() { 
 	 
 
-			System.out.println("DEMO: Iteración de Utilidades");
+			System.out.println("DEMO: Iteraciï¿½n de Utilidades");
 			System.out.println("=====================");
 
 			// Creamos la rejilla de 4x3 vista en clase:
 			//		- cada celda guarda el valor de la recompensa
-			//		- las acciones posibles son movimientos arriba, abajo, dcha, e izq (rebotando en los obstáculos)
+			//		- las acciones posibles son movimientos arriba, abajo, dcha, e izq (rebotando en los obstï¿½culos)
 			CellWorld<Double> cw = PracticaCellWorldFactory.createCellWorldPractica();
 			
 			// Creamos un MDP a partir de la rejilla:
-			//         - habrá incertidumbre en los efectos de las acciones
+			//         - habrï¿½ incertidumbre en los efectos de las acciones
 			MarkovDecisionProcess<Cell<Double>, CellWorldAction> mdp = MDPFactory
 					.createMDPForFigure17_3(cw);
 			
-			// Creamos un objeto de la clase ValueIteration, que implementa el algoritmo de iteración de Utilidades
+			// Creamos un objeto de la clase ValueIteration, que implementa el algoritmo de iteraciï¿½n de Utilidades
 			ValueIteration<Cell<Double>, CellWorldAction> vi = new ValueIteration<Cell<Double>, CellWorldAction>(
 					1.0);
 
@@ -137,7 +140,7 @@ public class MDPDemo {
 
 			System.out.println("=========================\n");
 			
-			System.out.println("Análisis de la posición (3,1):");
+			System.out.println("Anï¿½lisis de la posiciï¿½n (3,1):");
 			
 			Double uArriba = 0.8 * U.get(cw.getCellAt(3, 2)) +
 							 0.1 * U.get(cw.getCellAt(4, 1)) +
