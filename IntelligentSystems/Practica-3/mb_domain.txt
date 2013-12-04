@@ -1,0 +1,15 @@
+operator go(M,From,To)
+pre: monkey(M), place(From), place(To), at(M,From), low(M)
+post: ~at(M,From), at(M,To)
+
+operator push(M,C,From,To)
+pre: monkey(M), box(C), place(From), place(To),at(M,From), at(C,From), light(C), low(M)
+post: ~at(M,From), ~at(C,From), at(M,To), at(C,To)
+
+operator climbup(M,C,Z)
+pre: monkey(M), box(C), place(Z), at(M,Z), at(C,Z), low(M)
+post: ~low(M), high(M)
+
+operator grasp(M,B,Z)
+pre: monkey(M), banana(B), place(Z), at(M,Z), at(B,Z), high(M), high(B)
+post: ~at(B,Z), have(M,B), ~high(B), low(B)
