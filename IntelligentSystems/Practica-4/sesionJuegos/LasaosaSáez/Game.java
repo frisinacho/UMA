@@ -14,8 +14,9 @@ import aima.core.search.adversarial.GameState;
  * @author Ravi Mohan
  * @author Mike Stampone
  * 
- * @autor  L.Mandow
- * Sistemas Inteligentes - métodos adicionales al final del fichero.
+ * @author  L.Mandow
+ * @author I.Lasaosa
+ * Sistemas Inteligentes - mï¿½todos adicionales al final del fichero.
  */
 public abstract class Game<MOVE> {
 	protected GameState initialState = new GameState();
@@ -204,8 +205,8 @@ public abstract class Game<MOVE> {
 	}
 	
 	
-	/// MÉTODOS DE LA PRÁCTICA //////////////////////////////////////
-	// Métodos para contar las hojas generadas por MiniMax
+	/// Mï¿½TODOS DE LA PRï¿½CTICA //////////////////////////////////////
+	// Mï¿½todos para contar las hojas generadas por MiniMax
 	
 	public int maxValueLeafs(GameState state) {
 		
@@ -241,8 +242,8 @@ public abstract class Game<MOVE> {
 
 	}
 	
-	/// MÉTODOS DE LA PRÁCTICA //////////////////////////////////////
-	// Incluir aquí los métodos para contar las hojas generadas por Alfa-Beta
+	/// Mï¿½TODOS DE LA PRï¿½CTICA //////////////////////////////////////
+	// Incluir aquï¿½ los mï¿½todos para contar las hojas generadas por Alfa-Beta
 
 	protected int[] maxValueLeafs(GameState state, AlphaBeta ab) {
 		int[] result = new int[2];
