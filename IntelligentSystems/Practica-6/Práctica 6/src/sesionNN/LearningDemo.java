@@ -1,7 +1,7 @@
 package sesionNN;
 
 import aima.core.learning.framework.DataSet;
-//import aima.core.learning.framework.DataSetFactory;  //modificado para la práctica en sesionNN
+//import aima.core.learning.framework.DataSetFactory;  //modificado para la prï¿½ctica en sesionNN
 import aima.core.learning.neural.BackPropLearning;
 import aima.core.learning.neural.FeedForwardNeuralNetwork;
 import aima.core.learning.neural.IrisDataSetNumerizer;
@@ -10,6 +10,10 @@ import aima.core.learning.neural.NNConfig;
 import aima.core.learning.neural.NNDataSet;
 import aima.core.learning.neural.Numerizer;
 import aima.core.learning.neural.Perceptron;
+
+/*
+ * @author I. Lasaosa
+ */
 
 
 public class LearningDemo {
@@ -34,8 +38,8 @@ public class LearningDemo {
 	}
 	
 	/*
-	 * Crea un Perceptron con las neuronas y entradas indicadas. Lo entrena el número de epocas
-	 * con el conjunto de datos innds. Después devuelve el número de ejemplos clasificado
+	 * Crea un Perceptron con las neuronas y entradas indicadas. Lo entrena el nï¿½mero de epocas
+	 * con el conjunto de datos innds. Despuï¿½s devuelve el nï¿½mero de ejemplos clasificado
 	 * correcta y erroneamente tras el entrenamiento.
 	 */
 
