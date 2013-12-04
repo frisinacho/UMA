@@ -3,13 +3,8 @@ package sesionJuegos;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
 import aima.core.search.adversarial.AlphaBeta;
 import aima.core.search.adversarial.Game;
-import aima.core.search.adversarial.GameState;
-**/
-
-import aima.core.search.adversarial.AlphaBeta;
 import aima.core.search.adversarial.GameState;
 import aima.core.environment.tictactoe.TicTacToeBoard;
 
@@ -21,7 +16,8 @@ import aima.core.util.datastructure.XYLocation;
  * @author Ravi Mohan
  * 
  * @author L. Mandow
- * Fichero para la práctica de Sistemas Inteligentes
+ * @author I.Lasaosa
+ * Fichero para la prï¿½ctica de Sistemas Inteligentes
  * 
  */
 public class TicTacToe extends Game<XYLocation> {
@@ -198,8 +194,8 @@ public class TicTacToe extends Game<XYLocation> {
 		return retVal;
 	}
 	
-	//// MÉTODOS DE LA PRÁCTICA  ///////////////////////////////
-	// Método que devuelve el número de nodos hoja visitados por MiniMAX
+	//// Mï¿½TODOS DE LA PRï¿½CTICA  ///////////////////////////////
+	// Mï¿½todo que devuelve el nï¿½mero de nodos hoja visitados por MiniMAX
 	
 	public int getMiniMaxLeafs() {
 		
@@ -219,8 +215,8 @@ public class TicTacToe extends Game<XYLocation> {
 		return valor;
 	}
 	
-	/// MÉTODOS DE LA PRÁCTICA //////////////////////////////////////
-	// Incluir aquí el método que devuelve el número de nodos hoja visitados por Alfa-Beta
+	/// Mï¿½TODOS DE LA PRï¿½CTICA //////////////////////////////////////
+	// Incluir aquï¿½ el mï¿½todo que devuelve el nï¿½mero de nodos hoja visitados por Alfa-Beta
 
 	
 	public int getAlphaBetaLeafs() {
