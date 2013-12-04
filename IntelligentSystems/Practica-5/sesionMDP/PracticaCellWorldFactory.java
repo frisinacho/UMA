@@ -4,10 +4,12 @@ import aima.core.environment.cellworld.*;
 
 /**
  * @author L. Mandow
+ * @author I.Lasaosa
+ * 
  * Adaptado del original de AIMA:
  * @author Ciaran O'Reilly
- * 
  */
+ 
 public class PracticaCellWorldFactory {
 
 	/**
@@ -29,9 +31,9 @@ public class PracticaCellWorldFactory {
 	}
 	
 	/**
-	 * Crear aquí el "cell world" de la práctica
+	 * Crear aquï¿½ el "cell world" de la prï¿½ctica
 	 * 
-	 * @return una representación del "cell world" de la práctica.
+	 * @return una representaciï¿½n del "cell world" de la prï¿½ctica.
 	 */
 	// public static CellWorld<Double> createCellWorldPractica() {	}
 	public static CellWorld<Double> createCellWorldPractica(){
