@@ -1,0 +1,17 @@
+Escribe una función en ensamblador MIPS que cuente el número de veces que aparece un determinado valor "n" en un vector datos de tamaño tamdat. La función se debe llamar hist. Debe aceptar un parámetro de entrada por el registro $4 que indica el valor n y debe devolver el número de veces que aparece n en datos por el registro $2.
+Escribe el código en el simulador MARS con nombre de fichero problema2.asm y comprueba su correcto funcionamiento. Tras haberlo comprobado, comprímelo en un fichero llamado problema2.zip y entrégalo en GUAC en la tarea habilitada para ello.
+
+.data
+tamdat: .word 15
+datos: .word 2, 4, 2, 8, 2, 4, 2, 7, 5, 6, 5, 3, 7, 6, 8
+res: .word 0
+
+.text 
+main:
+li $4, 4
+jal hist
+sw $2, res($0)
+li $2, 10
+syscall
+
+hist: ... #(contar el número de veces que aparece el valor almacenado en $4 en el vector #datos y devolver el resultado en $2) 
