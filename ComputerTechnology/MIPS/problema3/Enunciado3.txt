@@ -1,0 +1,14 @@
+Escribe un programa en ensamblador MIPS que usando la función creada en el problema anterior (hist), calcule el número de veces que aparecen cada uno de los valores almacenados en el vector valores dentro del vector datos y lo almacene en el vector res. Es decir, en res[i] deberás almacenar el número de veces que aparece valores[i] en el vector datos (para i=0 hasta tamval -1). El tamaño del vector valores se especifica en la variable tamval y el tamaño del vector datos se especifica en la variable tamdat.
+Escribe el código en el simulador MARS con nombre de fichero problema3.asm y comprueba su correcto funcionamiento. Tras haberlo comprobado, comprímelo en un fichero llamado problema3.zip y entrégalo en GUAC en la tarea habilitada para ello.
+
+.data
+tamval: .word 4
+tamdat: .word 15
+datos: .word 2, 4, 2, 8, 2, 4, 2, 7, 5, 6, 5, 3, 7, 6, 8
+valores: .word 2, 4, 6, 8
+res: .word 0, 0, 0, 0
+
+.text
+main: ...
+
+hist: ...
