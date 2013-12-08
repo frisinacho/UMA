@@ -1,0 +1,1 @@
+Ejercicio para realizar un conversor de monedas (Euro-Dolar) practicando distintos tipos de vistas en un patrón MVC.
